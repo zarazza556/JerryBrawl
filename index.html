@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download</title>
+    <title>JerryBrawl - Download</title>
     <style>
         * {
             margin: 0;
@@ -18,37 +18,47 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            color: white;
         }
 
         .container {
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 600px;
         }
 
         .logo {
-            max-width: 300px;
+            width: 400px;
+            max-width: 90%;
             height: auto;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            padding: 0 20px;
         }
 
         .download-btn {
             display: inline-block;
             background-color: #2563eb;
             color: white;
-            padding: 16px 40px;
-            font-size: 18px;
+            padding: 12px 28px;
+            font-size: 16px;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .download-btn:hover {
             background-color: #1d4ed8;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
 
         .download-btn:active {
@@ -58,8 +68,15 @@
 </head>
 <body>
     <div class="container">
-        <img src="gamelogo.png" alt="Game Logo" class="logo">
-        <a href="app-release.apk" class="download-btn" download>Download Latest Version</a>
+        <img src="gamelogo.png" alt="JerryBrawl Logo" class="logo">
+        
+        <p class="description">
+            A competitive balloon-popping game featuring an Elo rating system. 
+            Challenge players worldwide, climb the leaderboards, and prove your skills 
+            in this fast-paced multiplayer experience.
+        </p>
+        
+        <a href="https://github.com/zarazza556/JerryBrawl/releases/download/APK_Releases/jerrybrawl.apk" class="download-btn" download>Download Latest Version</a>
     </div>
 </body>
 </html>
